@@ -10,7 +10,7 @@ resources:
 
 variables:
   tag: '$(Build.BuildId)'
-
+  Build image: '$(Build.image)'
 stages:
 - stage: Build
   displayName: Build image
