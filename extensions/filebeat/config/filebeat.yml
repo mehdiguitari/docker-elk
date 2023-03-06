@@ -1,5 +1,4 @@
 ## Filebeat configuration
-## https://github.com/elastic/beats/blob/main/deploy/docker/filebeat.docker.yml
 #
 
 name: filebeat
@@ -30,9 +29,6 @@ output.elasticsearch:
   username: filebeat_internal
   password: ${FILEBEAT_INTERNAL_PASSWORD}
 
-## HTTP endpoint for health checking
-## https://www.elastic.co/guide/en/beats/filebeat/current/http-endpoint.html
-#
 
 http:
   enabled: true
